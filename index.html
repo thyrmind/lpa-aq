@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>LPA - AQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="styles.css">
+  <!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">-->
+</head>
+<body onload="toggleBoxes()">
+<noscript>JavaScript Required</noscript>
+<div class="top" id="head">
+<h2><center>Listening Post Alpha</center></h2>
+<form onsubmit="return false;"><input type="text" id="input" placeholder="Input Test Phrase" spellcheck="false" autofocus></form>
+<dl>
+<div><dt>Sum (AQ)</dt><dd id="result">0</dd></div>
+<hr>
+<div><dt>Matches</dt></div>
+<div><dt><br></dt></div>
+<div><dt><b style="text-align: left;">Select Database:</b></dt></div>
+<div><dt><input type="checkbox" id="showyear1"  onclick="toggleBoxes()" checked style="height:19px;width:19px;">LPA Year 1</dt><dd id="year1count">0</dd></div>
+<div><dt><input type="checkbox" id="showyear2"  onclick="toggleBoxes()" checked style="height:19px;width:19px;">LPA Year 2</dt><dd id="year2count">0</dd></div>
+<div><dt><input type="checkbox" id="showyear3"  onclick="toggleBoxes()" checked style="height:19px;width:19px;">LPA Year 3</dt><dd id="year3count">0</dd></div>
+<div><dt><input type="checkbox" id="showyear4"  onclick="toggleBoxes()" checked style="height:19px;width:19px;">LPA Year 4</dt><dd id="year4count">0</dd></div>
+<hr>
+<div class="out" id="year1" style="display:none;"><strong>LPA Year 1</strong><div><ol id="year1match">N/A</ol></div></div>
+<div class="out" id="year2" style="display:none;"><strong>LPA Year 2</strong><div><ol id="year2match">N/A</ol></div></div>
+<div class="out" id="year3" style="display:none;"><strong>LPA Year 3</strong><div><ol id="year3match">N/A</ol></div></div>
+<div class="out" id="year4" style="display:none;"><strong>LPA Year 4</strong><div><ol id="year4match">N/A</ol></div></div>
+</dl>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="boxes.js"></script>
+<script src="data.js"></script>
+<script src="results.js"></script>
+<script src="cipher.js"></script>
+</body>
+</html>
